@@ -1,7 +1,7 @@
 
 
 '''
-Inverse Rodrigues: Generating joint locations from rotation matrixof every joint
+Inverse Rodrigues: Generating joint locations from rotation matrix of every joint
 Ref:
 https://math.stackexchange.com/questions/83874/efficient-and-accurate-numerical-implementation-of-the-inverse-rodrigues-rotatio
 
@@ -45,5 +45,5 @@ def inv_rodrigues(Rotation):
 if __name__ == "__main__":
     rotation_mat = "/path/to/rotation_matrix.npy"
     DATA = np.load(rotation_mat)
-    JOIN_LOC = inv_rodrigues(DATA)
-    print(JOIN_LOC)
+    JOINT_LOC = inv_rodrigues(DATA)
+    print(JOINT_LOC)
